@@ -1,6 +1,8 @@
 # how to run this app.
 1. npm install
 2. npm start
+user: amigo
+pass: delta
 
 Project has 2 routes, login & dashboard. You are forced to login page if you are logged out & you are forced to dashboard if you're loggedIn.
 
@@ -13,5 +15,7 @@ header has username, cart & search field.
 dashboard body has 2 components, filter-listing (Filter Products) & product-listing (Display Products).
 
 # Tech used: using angular implemented Routing concepts, Guard(CanActivate), Route Resolvers, Http Interceptors, Services, @Input(), EventEmitters, Forms Module & ngForm validation, Loading Animation etc.
+
+NOTE: website is already hosted at https://scart-xebia.000webhostapp.com/
 
 For any details & discussions, write to me at: rudra.utpal@gmail.com or call: +91 6200557251
