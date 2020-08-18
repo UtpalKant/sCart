@@ -1,0 +1,33 @@
+.filters__heading {
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    background: #5d5c5c30;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 2rem;
+  }
+  
+  .filters__heading .reset {
+    position: absolute;
+    cursor: pointer;
+    right: 0.8rem;
+    top: 0.8rem;
+  }
+  
+  .filters__heading .reset img {
+    width: 17px;
+  }
+  
+  .filters__colour, .filters__brand, .filters__price, .filters__discount {
+    border: 1px solid #d1d1d1;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters__colour p, .filters__brand p, .filters__price p, .filters__discount p {
+    margin-bottom: 0.8rem;
+  }
+  
+  .filters__colour span, .filters__brand span, .filters__price span, .filters__discount span {
+    padding: 0 0.2rem;
+  }

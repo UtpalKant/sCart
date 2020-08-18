@@ -1,0 +1,23 @@
+<div class="filters__heading">
+    <span><strong>Filters</strong></span>
+</div>
+<div *ngFor="let filter of filters">
+    <div class="filters__colour" *ngIf="filter.type!=='BRAND'">
+        <div *ngIf="filter.type!=='PRICE'">
+            <p>{{filter.type}}</p>
+            <div *ngFor="let value of filter.values">
+                <input type="checkbox" [value]=value.value (change)="setFilters(value.value, filter.type)">
+                <span>{{value.title}}</span>
+            </div>
+        </div>
+        <div *ngIf="filter.type==='PRICE'">
+            <p>{{filter.type}}</p>
+            <select (change)="updateFilters()" [(ngModel)]="filterData.minPrice">
+                <option *ngFor="let value of filter.values" [value]=value.value>{{value.title}}</option>
+            </select>
+            <select (change)="updateFilters()" [(ngModel)]="filterData.maxPrice">
+                <option *ngFor="let value of filter.values" [value]=value.value>{{value.title}}</option>
+            </select>
+        </div>
+    </div>
+</div>

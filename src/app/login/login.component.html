@@ -1,0 +1,19 @@
+<form #login="ngForm" class="container--login" (ngSubmit)="onSubmit(login)">
+  <h1>Login</h1>
+  <div>
+    <label for="username"><span>Username</span></label>
+    <input type="text" id="username" name="user" ngModel required #user="ngModel"
+      [ngClass]="{'danger': user.invalid && (user.dirty || user.touched)}" />
+  </div>
+  <div>
+    <label for="password"><span>Password</span></label>
+    <input type="password" id="password" name="pass" ngModel required #pass="ngModel"
+      [ngClass]="{'danger': pass.invalid && (pass.dirty || pass.touched)}" />
+  </div>
+  <div class="login-wrapper">
+    <div class="error" [ngClass]="{'show': login.invalid && !login.pristine}">Please enter valid credentials !</div>
+    <div class="error show" *ngIf="isFailed">wrong username or password !</div>
+    <button [ngClass]="{'disable': login.invalid && !login.pristine}">Login</button>
+  </div>
+  <span class="branding">sCart</span>
+</form>

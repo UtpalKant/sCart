@@ -1,0 +1,19 @@
+<section class="container">
+  <div class="row">
+    <div class="column column-25">
+      <app-filter-listing [filters]="filters"></app-filter-listing>
+    </div>
+    <div class="column column-75">
+      <div>
+        <app-product-listing
+          [products]="products"
+          *ngIf="products.length; else noProduct"
+          class="products"
+        ></app-product-listing>
+        <ng-template #noProduct>
+          No Product Found
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</section>

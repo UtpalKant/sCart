@@ -1,0 +1,25 @@
+<header class="container">
+  <div class="logo">
+    <img src="../../assets/logo.png" alt="logo" />
+  </div>
+  <input
+    type="text"
+    value=""
+    class="search"
+    placeholder="Search Product"
+    [(ngModel)]="searchKey"
+  />
+  <button class="button button-outline" (click)="searchProducts(searchKey)">
+    <img src="../../assets/search.png" alt="search" />
+  </button>
+  <div class="user">
+    <div class="user__profile">
+      <img src="../../assets/user.png" alt="user" />
+      <span>Welcome, {{ user }}</span>
+    </div>
+    <div class="user__cart">
+      <img src="../../assets/cart.png" alt="items" />
+      <span>{{ cartLength || 0 }} Item(s)</span>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,49 @@
+.container {
+  margin: 0 auto;
+  max-width: 112rem;
+  padding: 0 2rem;
+  position: relative;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 3rem !important;
+  padding-top: 2rem !important;
+}
+
+header .logo img {
+  max-width: 60px;
+}
+
+header .search {
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 2rem;
+}
+header .button {
+  align-items: center;
+  display: flex;
+  padding: 0 1.2rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+
+header .user {
+  min-width: 200px;
+}
+
+header .user img {
+  width: 20px;
+  padding-right: 0.5rem;
+}
+@media screen and (max-width: 1024px) {
+  header .user {
+    min-width: 150px;
+  }
+}

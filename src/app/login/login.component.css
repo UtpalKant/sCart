@@ -1,0 +1,18 @@
+.container--login {
+  max-width: 550px;
+  margin: 0 auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding: 3rem;
+  margin-top: 8rem;
+  box-shadow: 5px 5px 20px;
+}
+.login-wrapper {
+  padding-top: 3rem;
+}
+.branding {
+  font-size: 35px;
+  text-align: right;
+  display: block;
+  margin-top: 40px;
+}
