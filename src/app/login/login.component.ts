@@ -21,9 +21,10 @@ export class LoginComponent implements OnInit {
   isLoggedIn: boolean;
   isFailed: boolean;
 
-  ngOnInit(): void {
+  async ngOnInit() {
     if (this.tokenSvc.getLoginStatus()) {
-      this.router.navigate(['/dashboard']);
+      await this.router.navigate(['./dashboard']);
+      await this.router.navigate(['/dashboard']);
     }
   }
 
